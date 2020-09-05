@@ -14,3 +14,5 @@ Resource is now EntityModel
 Resources is now CollectionModel
 
 PagedResources is now PagedModel
+
+ControllerLinkBuilder is now WebMvcLinkBuilder
