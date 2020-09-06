@@ -9,13 +9,16 @@ import javax.persistence.Table;
 import org.springframework.hateoas.RepresentationModel;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonView;
 
 @Entity
 @Table(name = "assignment")
 public class Assignment extends RepresentationModel {
 	
 	@Id
+	@JsonView(Views.Internal.class)
 	private Long id;
+	@JsonView(Views.Internal.class)
 	private String assignmentTitle;
 	
 	@ManyToOne(fetch = FetchType.LAZY)

@@ -13,22 +13,29 @@ import javax.validation.constraints.NotEmpty;
 import org.springframework.hateoas.RepresentationModel;
 
 import com.fasterxml.jackson.annotation.JsonFilter;
+import com.fasterxml.jackson.annotation.JsonView;
 
 @Entity
 @Table(name = "student")
-@JsonFilter("studentFilter")
+//@JsonFilter("studentFilter")
 public class Student extends RepresentationModel {
 	@Id
+	@JsonView(Views.External.class)
 	private Long id;
 	@Column(unique = true)
 	@NotBlank(message = "Should enter atleast one character")
+	@JsonView(Views.External.class)
 	private String username;
+	@JsonView(Views.External.class)
 	private String firstname;
+	@JsonView(Views.External.class)
 	private String lastname;
 	@Column(unique = true)
+	@JsonView(Views.Internal.class)
 	private String ssn;
 
 	@OneToMany(mappedBy = "student")
+	@JsonView(Views.Internal.class)
 	private List<Assignment> assignments;
 
 	public List<Assignment> getAssignments() {
