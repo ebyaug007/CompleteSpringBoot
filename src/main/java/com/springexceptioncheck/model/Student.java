@@ -12,8 +12,11 @@ import javax.validation.constraints.NotEmpty;
 
 import org.springframework.hateoas.RepresentationModel;
 
+import com.fasterxml.jackson.annotation.JsonFilter;
+
 @Entity
 @Table(name = "student")
+@JsonFilter("studentFilter")
 public class Student extends RepresentationModel {
 	@Id
 	private Long id;
