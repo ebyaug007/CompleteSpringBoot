@@ -28,4 +28,4 @@ https://springdoc.org/migrating-from-springfox.html
 example 
 	1) https://dzone.com/articles/simplified-spring-swagger
 	2) https://dzone.com/articles/openapi-3-documentation-with-spring-boot
-
+Used code from example 2
