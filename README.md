@@ -16,3 +16,16 @@ Resources is now CollectionModel
 PagedResources is now PagedModel
 
 ControllerLinkBuilder is now WebMvcLinkBuilder
+
+----------------------------------------------------------
+
+Swagger changes refer swagger migration docs
+
+http://springfox.github.io/springfox/docs/current/#introduction
+
+https://springdoc.org/migrating-from-springfox.html
+
+example 
+	1) https://dzone.com/articles/simplified-spring-swagger
+	2) https://dzone.com/articles/openapi-3-documentation-with-spring-boot
+
