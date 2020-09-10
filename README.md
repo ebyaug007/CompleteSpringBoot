@@ -39,7 +39,25 @@ https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-
 
 
 You can make use of basic endpoint just by adding actuator dependency. For additional ones add the necessary properties in application.properities
-
+-----------------------------------------------------------
 For reference of Spring boot Admin refer the below link
 
 https://codecentric.github.io/spring-boot-admin/current/
+
+Steps
+	1. Add dependency starter-client
+
+	2. Add 2 spring.boot.admin properties in application.properties
+
+		#Point to Admin Server
+		spring.boot.admin.client.url=http://localhost:9080
+		#using the metadata
+		spring.boot.admin.client.instance.metadata.tags.environment=dev
+
+
+Create a seperate project for running springboot admin (here running in 9080 port server.port=9080)
+	1. Add dependency starter-server
+	2. Annotate SpringbootApplication class with EnableAdminServer
+
+
+Start both these projects and access http://localhost:9080/
