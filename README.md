@@ -29,3 +29,13 @@ example
 	1) https://dzone.com/articles/simplified-spring-swagger
 	2) https://dzone.com/articles/openapi-3-documentation-with-spring-boot
 Used code from example 2
+
+----------------------------------------------
+
+For actuator refer the below link
+
+
+https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-features.html#production-ready-endpoints
+
+
+You can make use of basic endpoint just by adding actuator dependency. For additional ones add the necessary properties in application.properities
