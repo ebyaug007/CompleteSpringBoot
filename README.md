@@ -39,3 +39,7 @@ https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-
 
 
 You can make use of basic endpoint just by adding actuator dependency. For additional ones add the necessary properties in application.properities
+
+For reference of Spring boot Admin refer the below link
+
+https://codecentric.github.io/spring-boot-admin/current/
